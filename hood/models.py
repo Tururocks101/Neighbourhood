@@ -14,8 +14,8 @@ class Hood(models.Model):
 
 class Business(models.Model):
     business_name =models.CharField(max_length=200)
-    owner =models.ForeignKey(User, models.CASCADE)
-    email = models.EmailField()
+    owner =models.CharField(max_length=100)
+    business_email = models.EmailField()
 
     def __str__(self):
         return f'{self.business_name}'
