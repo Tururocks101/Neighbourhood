@@ -13,7 +13,7 @@ class Hood(models.Model):
         return f'{self.name}'
 
 class Business(models.Model):
-    business_name =models.ForeignKey( on_delete=models.CASCADE)
+    business_name =models.CharField(max_length=200)
     owner =models.ForeignKey(User, models.CASCADE)
     email = models.EmailField()
 
