@@ -7,6 +7,7 @@ class Hood(models.Model):
     name = models.CharField(max_length=200, null=True)
     location = models.CharField(max_length=30, null=True)
     occupant_count = models.PositiveIntegerField(null=True)
+    image_url = models.CharField(max_length=520)
 
     def __str__(self):
         return f'{self.name}'
