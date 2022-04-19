@@ -126,3 +126,7 @@ STATIC_ROOT=os.path.join(BASE_DIR/"asert/")
 STATICFILES_DIRS =[
     os.path.join(BASE_DIR / "static")
 ]
+
+LOGIN_REDIRECT_URL ='dashboard-index'
+
+LOGIN_URL = 'user-login'

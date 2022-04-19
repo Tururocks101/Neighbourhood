@@ -1,0 +1,40 @@
+{% extends 'partials/base.html' %}
+{% block title %}Neighbourhood Page{% endblock %}
+
+{% block content %}
+
+{% include 'partials/topnav.html'%}
+
+<!--Table-->
+<div class="container">
+    <div class="row my-4">
+        <div class="col-md-4"></div>
+        <div class="col-md-8">
+            <table class="table bg-white">
+                <thead class="bg-info">
+                    <tr class="text-white">
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Occupants Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><a class="btn btn-info btn-sm" href="">View</a></th>
+                        <td>Zeeeej</td>
+                        <td>blowar</td>
+                        <td>200</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!--End Table-->
+{% endblock %}
